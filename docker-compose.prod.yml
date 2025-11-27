@@ -1,0 +1,13 @@
+services:
+  nuxt-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ecommerce-nuxt-prod
+    ports:
+      - "3001:3000" # 使用不同端口避免與 dev 衝突
+    environment:
+      - NODE_ENV=production
+      - NUXT_HOST=0.0.0.0
+      - NUXT_PORT=3000
+    restart: unless-stopped

@@ -34,5 +34,14 @@ export default defineNuxtConfig({
     devServer: {
         host: '0.0.0.0',
         port: 3000
+    },
+
+    nitro: {
+        prerender: {
+            // keep crawl true so pages still get discovered, but ignore the netlify image proxy
+            crawl: true,
+            ignore: ['/.netlify/**']
+        }
     }
+
 })

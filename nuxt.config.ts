@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
 
     image: {
+        provider: 'none',
         domains: ['images.unsplash.com']
     },
 

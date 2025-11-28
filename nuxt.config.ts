@@ -13,6 +13,7 @@ export default defineNuxtConfig({
 
     app: {
         baseURL: '/e-commerce-demo/',
+        buildAssetsDir: 'assets',
         head: {
             title: 'Premium Sneakers - E-commerce',
             meta: [

@@ -4,7 +4,7 @@
       <!-- Product Grid -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <!-- Image Gallery Section -->
-        <div class="sticky top-8">
+        <div class="lg:sticky lg:top-8">
           <ImageGallery :images="productImages" :alt-text="product.name" />
         </div>
 
